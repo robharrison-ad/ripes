@@ -1,0 +1,114 @@
+<style>
+  .code {
+    padding: 20px;
+    background-color: rgba(27, 23, 23);
+    color: #ffffff;
+    display: block;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-size: 14pt;
+    }
+</style>
+
+<div>
+
+  <div class="row">
+    <div class="col-sm-12" style="text-align: center;">
+      <!-- See examples below, and/or view <a (click)="openReadme()" target="_blank">README</a> file. -->
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-3">
+      <div style="font-size: 1.4rem; font-weight: bold; text-align: right; padding-top: 5%">rmbgb Pipe</div>
+    </div>
+    <div class="col-md-4">
+      <div style="width: 140px; margin-left: auto; margin-right: auto;">
+        <div>Enter a number:</div>
+        <input type="text" [(ngModel)]="inputText" style="width: 140px; margin-top: 6%" />
+      </div>
+    </div>
+    <div class="col-md-5">
+      <h3>{{ inputText | rmbgb }} </h3>
+    </div>
+  </div>
+
+  <hr class="row" />
+  <div class="row">
+    <div class="col-md-12" style="text-align: center; margin-top: 35px;">
+      <h3>rOrderBy Pipe</h3>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-3">
+
+    </div>
+    <div class="col-sm-9" style="font-weight: bold;">
+      RESULT:
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-3" style="padding-left: 30px;">
+      <div>testNumberArray:</div>
+      <pre><code>{{ testNumberArray | json }}</code></pre>
+    </div>
+    <div class="col-sm-9" style="background-color: rgba(21,255,255,0.3); font-size: 14pt;">
+      <code>&lt;div *ngFor=&quot;let num of testNumberArray | rOrderBy&quot;&gt;{{ num }}&lt;/div&gt;</code>
+      <div *ngFor="let num of testNumberArray | rOrderBy">{{ num }}</div>
+    </div>
+  </div>
+
+  <div class="row" style="text-align: center; font-size: 14pt; margin-top: 25px;">
+    <div class="col-sm-12">
+        <code>&lt;div *ngFor=&quot;let num of testNumberArray | rOrderBy:'c.f.h'&quot;&gt;{{ num }}&lt;/div&gt;</code>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-2" *ngFor="let obj of testObjectArray">
+      <pre><code>{{obj | json}}</code></pre>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-9">
+      <div style="font-weight: bold;">RESULT:</div>
+      <div style="background-color: rgba(21,255,255,0.3)" *ngFor="let obj of testObjectArray | rOrderBy:'c.f.h'"><code>{{ obj | json }}</code></div>
+    </div>
+  </div>
+
+  <div class="row" style="margin-top: 35px; margin-bottom: 10px; border-top: 1px solid black;">
+    <div class="col-sm-12" style="font-weight: bold; padding-top: 15px;">Sample Array of Project Objects:</div>
+  </div>
+  <div class="row">
+    <div class="col-sm-2" *ngFor="let obj of testObjectArrayTwo">
+      <pre><code>{{obj | json}}</code></pre>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="code">
+        <code> &lt;div &#42;ngFor=&quot;let obj of testObjectArrayTwo | rOrderBy:'projectDue'&quot;&gt;&lt;/div&gt;</code>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-9">
+      <div style="background-color: rgba(21,255,255,0.3)" *ngFor="let obj of testObjectArrayTwo | rOrderBy:'projectDue'"><code>{{ obj | json }}</code></div>
+    </div>
+  </div>
+  <div class="row" style="margin-top: 35px; margin-bottom: 10px; border-top: 1px solid black;">
+    <div class="col-sm-12">
+      <div class="code">
+        <code> &lt;div &#42;ngFor=&quot;let obj of testObjectArrayTwo | rOrderBy:'projectComplete'&quot;&gt;&lt;/div&gt;</code>
+      </div>
+    </div>
+    <div class="col-sm-9">
+      <div style="background-color: rgba(21,255,255,0.3)" *ngFor="let obj of testObjectArrayTwo | rOrderBy:'projectComplete'"><code>{{ obj | json }}</code></div>
+    </div>
+  </div>
+
+
+</div>

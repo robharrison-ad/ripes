@@ -1,0 +1,184 @@
+<style>.hll { background-color: #ffffcc }
+.c { color: #888888 } /* Comment */
+.err { color: #FF0000; background-color: #FFAAAA } /* Error */
+.k { color: #008800; font-weight: bold } /* Keyword */
+.o { color: #333333 } /* Operator */
+.ch { color: #888888 } /* Comment.Hashbang */
+.cm { color: #888888 } /* Comment.Multiline */
+.cp { color: #557799 } /* Comment.Preproc */
+.cpf { color: #888888 } /* Comment.PreprocFile */
+.c1 { color: #888888 } /* Comment.Single */
+.cs { color: #cc0000; font-weight: bold } /* Comment.Special */
+.gd { color: #A00000 } /* Generic.Deleted */
+.ge { font-style: italic } /* Generic.Emph */
+.gr { color: #FF0000 } /* Generic.Error */
+.gh { color: #000080; font-weight: bold } /* Generic.Heading */
+.gi { color: #00A000 } /* Generic.Inserted */
+.go { color: #888888 } /* Generic.Output */
+.gp { color: #c65d09; font-weight: bold } /* Generic.Prompt */
+.gs { font-weight: bold } /* Generic.Strong */
+.gu { color: #800080; font-weight: bold } /* Generic.Subheading */
+.gt { color: #0044DD } /* Generic.Traceback */
+.kc { color: #008800; font-weight: bold } /* Keyword.Constant */
+.kd { color: #008800; font-weight: bold } /* Keyword.Declaration */
+.kn { color: #008800; font-weight: bold } /* Keyword.Namespace */
+.kp { color: #003388; font-weight: bold } /* Keyword.Pseudo */
+.kr { color: #008800; font-weight: bold } /* Keyword.Reserved */
+.kt { color: #333399; font-weight: bold } /* Keyword.Type */
+.m { color: #6600EE; font-weight: bold } /* Literal.Number */
+.s { background-color: #fff0f0 } /* Literal.String */
+.na { color: #0000CC } /* Name.Attribute */
+.nb { color: #007020 } /* Name.Builtin */
+.nc { color: #BB0066; font-weight: bold } /* Name.Class */
+.no { color: #003366; font-weight: bold } /* Name.Constant */
+.nd { color: #555555; font-weight: bold } /* Name.Decorator */
+.ni { color: #880000; font-weight: bold } /* Name.Entity */
+.ne { color: #FF0000; font-weight: bold } /* Name.Exception */
+.nf { color: #0066BB; font-weight: bold } /* Name.Function */
+.nl { color: #997700; font-weight: bold } /* Name.Label */
+.nn { color: #0e84b5; font-weight: bold } /* Name.Namespace */
+.nt { color: #007700 } /* Name.Tag */
+.nv { color: #996633 } /* Name.Variable */
+.ow { color: #000000; font-weight: bold } /* Operator.Word */
+.w { color: #bbbbbb } /* Text.Whitespace */
+.mb { color: #6600EE; font-weight: bold } /* Literal.Number.Bin */
+.mf { color: #6600EE; font-weight: bold } /* Literal.Number.Float */
+.mh { color: #005588; font-weight: bold } /* Literal.Number.Hex */
+.mi { color: #0000DD; font-weight: bold } /* Literal.Number.Integer */
+.mo { color: #4400EE; font-weight: bold } /* Literal.Number.Oct */
+.sa { background-color: #fff0f0 } /* Literal.String.Affix */
+.sb { background-color: #fff0f0 } /* Literal.String.Backtick */
+.sc { color: #0044DD } /* Literal.String.Char */
+.dl { background-color: #fff0f0 } /* Literal.String.Delimiter */
+.sd { color: #DD4422 } /* Literal.String.Doc */
+.s2 { background-color: #fff0f0 } /* Literal.String.Double */
+.se { color: #666666; font-weight: bold; background-color: #fff0f0 } /* Literal.String.Escape */
+.sh { background-color: #fff0f0 } /* Literal.String.Heredoc */
+.si { background-color: #eeeeee } /* Literal.String.Interpol */
+.sx { color: #DD2200; background-color: #fff0f0 } /* Literal.String.Other */
+.sr { color: #000000; background-color: #fff0ff } /* Literal.String.Regex */
+.s1 { background-color: #fff0f0 } /* Literal.String.Single */
+.ss { color: #AA6600 } /* Literal.String.Symbol */
+.bp { color: #007020 } /* Name.Builtin.Pseudo */
+.fm { color: #0066BB; font-weight: bold } /* Name.Function.Magic */
+.vc { color: #336699 } /* Name.Variable.Class */
+.vg { color: #dd7700; font-weight: bold } /* Name.Variable.Global */
+.vi { color: #3333BB } /* Name.Variable.Instance */
+.vm { color: #996633 } /* Name.Variable.Magic */
+.il { color: #0000DD; font-weight: bold } /* Literal.Number.Integer.Long */</style>
+<h1 id="ngxripe">NgxRipe</h1>
+
+<<<<<<< Local Changes
+<h3 id="angular-pipes-for-projects-using-angular-2">Angular pipes for projects using Angular 2+</h3>
+
+<p>This project was generated with <a href="https://github.com/angular/angular-cli">Angular CLI</a> version 6.2.1.</p>
+=======
+>>>>>>> External Changes
+
+<table><thead>
+<tr>
+<th>Pipe Name</th>
+<th>What it does</th>
+<th>Usage Example</th>
+<th>result</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>rmbgb pipe</td>
+<td>Convert a number to bytes, KB, MB, GB, or TB.</td>
+<td><code>&lt;div&gt; {{ n  rmbgb }} &lt;/div&gt;</code></td>
+<td>(if n = 123456789): <code>123.46 MB</code></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>(if n = 1234567890123456789): <code>1,234,567.89 TB</code></td>
+</tr>
+</tbody></table>
+
+<<<<<<< Local Changes
+<p><code>&lt;div *ngFor=&quot;let num of testNumberArray | rOrderBy&quot;&gt;{{ num }}&lt;/div&gt;</code></p>
+=======
+
+`<div *ngFor="let num of testNumberArray | rOrderBy">{{ num }}</div>'
+
+
+## rOrderBy
+
+Sorts arrays by specified key or by value for arrays of primitive data types.
+
+#### Usage Examples
+
+Sort an array of numbers
+`*ngFor="let n of numberArray | rOrderBy"`
+
+Sort an object Array where object array is as below:
+`[0]: {
+  "a": 1,
+  "b": 2,
+  "c": {
+    "d": 3,
+    "e": 5,
+    "f": {
+      "g": 6,
+      "h": 7
+    }
+  }
+}`
+`[1]: {
+  "a": 8,
+  "b": 9,
+  "c": {
+    "d": 10,
+    "e": 11,
+    "f": {
+      "g": 12,
+      "h": 13
+    }
+  }
+}`
+`[2]: {
+  "a": 0,
+  "b": -1,
+  "c": {
+    "d": -2,
+    "e": -3,
+    "f": {
+      "g": -4,
+      "h": -5
+    }
+  }
+}`
+
+We can sort by first-level element, such as objectArray[0].a:
+`*ngFor="let o of objectArray | rOrderBy:'a'"`
+
+We can sort by deeper elements:
+`*ngFor="let o of objectArray | rOrderBy:'a.f.g'`
+
+We can sort by dates, integers, strings, boolean, etc.   Using an array of project objects as an example here:
+```
+{
+  "project": "project 1",
+  "projectManager": {
+    "firstName": "Billy",
+    "lastName": "Borman"
+  },
+  "projectId": 124,
+  "projectDue": "1/6/2013",
+  "projectComplete": false
+}
+```
+
+`*ngFor="let p of projectsArray | rOrderBy:'projectManager.lastName'"`
+or... 
+`*ngFor="let p of projectArray | rOrderBy:'projectDue'"`
+or...
+`*ngFor="let p of projectArray | rOrderBy:'projectComplete'"`
+
+More complete usage example:
+```
+<div *ngFor="let obj of testObjectArrayTwo | rOrderBy:'projectComplete'">{{ obj | json }}</div>
+```
+>>>>>>> External Changes
