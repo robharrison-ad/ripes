@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { MbgbSampleComponent } from './mbgb-sample/mbgb-sample.component';
 
 @Component({
   selector: 'app-root',
@@ -93,4 +94,8 @@ export class AppComponent {
 
   ];
 
+
+
+
+  
 }

@@ -1,5 +1,5 @@
 # NgxRipe
-### Angular pipes for projects using Angular 2+
+### Angular pipes for projects built with Angular 2+
 
 
 |  Pipe Name  |  What it does | Usage Example | result |

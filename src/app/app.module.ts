@@ -5,13 +5,15 @@ import { AppComponent } from './app.component';
 import { MbGbPipe } from './pipes/mbgb-pipe';
 import { ROrderByPipe } from './pipes/sort-pipe';
 import { NgForOf } from '@angular/common';
+import { MbgbSampleComponent } from './mbgb-sample/mbgb-sample.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     MbGbPipe,
-    ROrderByPipe
+    ROrderByPipe,
+    MbgbSampleComponent
   ],
   imports: [
     BrowserModule,
