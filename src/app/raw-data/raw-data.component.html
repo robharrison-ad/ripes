@@ -1,0 +1,69 @@
+<div class="mbgb-sample-main-container">
+
+
+  <hr />
+  <div class="info-wrapper">
+    <h3>Raw Data</h3>
+    <p>The raw data, for reference:</p>
+  </div>
+
+  <table class="table table-bordered table-striped table-hover">
+    <thead>
+      <tr>
+        <td>
+          userId
+        </td>
+        <td>
+          firstName
+        </td>
+        <td>
+          lastName
+        </td>
+        <td>
+        departmentNumber
+      </td>
+      <td>
+        firstName (of Manager)
+      </td>
+      <td>
+        lastName (of Manager)
+      </td>
+        <td>
+          bytesUsed
+        </td>
+        <td style="border-left: 3px solid black;">
+          json-formatted raw data
+        </td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let dataUser of sampleUsers">
+        <td>
+          {{ dataUser.userId }}
+        </td>
+        <td>
+          {{ dataUser.userInfo.firstName }}
+        </td>
+        <td>
+          {{ dataUser.userInfo.lastName }}
+        </td>
+        <td>
+        {{ dataUser.userInfo.departmentInfo.departmentNumber }}
+      </td>
+      <td>
+        {{ dataUser.userInfo.departmentInfo.departmentManager.firstName }}
+      </td>
+      <td>
+        {{ dataUser.userInfo.departmentInfo.departmentManager.lastName }}
+      </td>
+        <td>
+          {{ dataUser.bytesUsed }}
+        </td>
+        <td style="border-left: 3px solid black;">
+          <code><pre>{{ dataUser | json }}</pre></code>
+        </td>
+
+      </tr>
+    </tbody>
+  </table>
+</div>

@@ -6,6 +6,7 @@ import { ROrderByPipe } from './pipes/sort-pipe';
 import { NgForOf } from '@angular/common';
 import { MbgbSampleComponent } from './mbgb-sample/mbgb-sample.component';
 import { MbGbPipe } from './pipes/mbgb-pipe';
+import { RawDataComponent } from './raw-data/raw-data.component';
 
 
 @NgModule({
@@ -13,7 +14,8 @@ import { MbGbPipe } from './pipes/mbgb-pipe';
     AppComponent,
     ROrderByPipe,
     MbgbSampleComponent,
-    MbGbPipe
+    MbGbPipe,
+    RawDataComponent
   ],
   imports: [
     BrowserModule,

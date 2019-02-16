@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { Component, OnInit, Input } from '@angular/core';
+import { RawDataComponent } from '../raw-data/raw-data.component';
 
 
 @Component({
@@ -8,6 +8,8 @@ import { FormsModule } from '@angular/forms';
   styleUrls: ['./mbgb-sample.component.scss']
 })
 export class MbgbSampleComponent implements OnInit {
+
+
   sampleUsers: Array<any>;
   exampleCode: string = "<div>{{ dataUser.bytesUsed | rmbgb }}</div>";
   constructor() { }
